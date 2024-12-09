@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infoContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resolution {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#canvasContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+}
+
+#coordinatesBox {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    margin-top: 20px;
+    max-height: 300px;
+}
+
+
+#coordinatesBox h3 {
+    margin-bottom: 20px;
+}
+
+#pointsList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#pointsList li {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Styling the Clear Points button */
+#clearPointsButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f44336; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#clearPointsButton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Zone on Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- File upload section -->
+        <input type="file" id="uploadImage" accept="image/*, video/*">
+        
+        <!-- Resolution and Canvas -->
+        <div id="infoContainer">
+            <p id="resolution">Resolution: N/A</p>
+            <div id="canvasContainer">
+                <!-- Canvas for drawing -->
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+        
+        <!-- Points list section -->
+        <div id="coordinatesBox">
+            <h3>Points List</h3>
+            <ul id="pointsList"></ul>
+            <!-- Add a button to clear points -->
+        </div>
+        <button id="clearPointsButton">Clear Points</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
